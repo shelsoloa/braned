@@ -2,13 +2,10 @@
 name = "braned"
 version = "0.1.0"
 description = "Daemon for branebridge processes"
-authors = [
-    {name = "Shel Soloa",email = "shel@shelsoloa.com"}
-]
+authors = [{ name = "Shel Soloa", email = "shel@shelsoloa.com" }]
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-]
+requires-python = ">=3.12,<4.0"
+dependencies = ["sqlite-vec (>=0.1.6,<0.2.0)", "loguru (>=0.7.3,<0.8.0)"]
 
 
 [build-system]
