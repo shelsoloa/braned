@@ -110,6 +110,7 @@ class SQLiteVectorStore(BasePydanticVectorStore):
                 {insert_values};
             """
         )
+        self._connection.commit()
 
         return [n.node_id for n in nodes]
 
@@ -122,6 +123,7 @@ class SQLiteVectorStore(BasePydanticVectorStore):
                 node_id = '{ref_doc_id}';
             """
         )
+        self._connection.commit()
 
     def query(
         self,
