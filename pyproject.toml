@@ -5,7 +5,15 @@ description = "Daemon for branebridge processes"
 authors = [{ name = "Shel Soloa", email = "shel@shelsoloa.com" }]
 readme = "README.md"
 requires-python = ">=3.12,<4.0"
-dependencies = ["sqlite-vec (>=0.1.6,<0.2.0)", "loguru (>=0.7.3,<0.8.0)"]
+dependencies = [
+    "sqlite-vec (>=0.1.6,<0.2.0)",
+    "loguru (>=0.7.3,<0.8.0)",
+    "llama-index (>=0.12.16,<0.13.0)",
+    "numpy (>=2.2.2,<3.0.0)",
+    "pydantic (>=2.10.6,<3.0.0)",
+    "openai (>=1.61.1,<2.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)",
+]
 
 
 [build-system]
