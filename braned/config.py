@@ -9,3 +9,5 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 DEFAULT_PID_FILE = "/var/run/braned.pid"
 DEFAULT_LOG_FILE = "/var/log/braned.log"
+
+log_file_path = os.getenv("BRANED_LOG_FILE", DEFAULT_LOG_FILE)

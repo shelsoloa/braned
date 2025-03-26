@@ -2,7 +2,7 @@ import click
 
 from loguru import logger
 
-from braned.sys.daem import BraneDaemonController
+from braned.sys.daem import start_brane_daemon
 
 
 @click.group()
@@ -13,7 +13,7 @@ def cli():
 @cli.command()
 def start():
     logger.info("Starting braned")
-    BraneDaemonController.start_brane_daemon()
+    start_brane_daemon()
 
 
 @cli.command()
